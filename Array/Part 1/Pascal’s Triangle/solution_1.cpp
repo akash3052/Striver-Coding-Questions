@@ -15,7 +15,6 @@ public:
             return res;
         for(int i=2;i<n;i++)
         {
-            // vector<int> row;
             res[i].push_back(1);
             for(int j=0;j<res[i-1].size()-1;j++)
             {
@@ -23,7 +22,6 @@ public:
                 res[i].push_back(res[i-1][j]+res[i-1][j+1]);
             }
             res[i].push_back(1);
-            // res.push_back(row);
         }
         return res;
     }
