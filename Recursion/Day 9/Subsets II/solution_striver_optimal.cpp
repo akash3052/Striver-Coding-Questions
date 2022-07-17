@@ -24,3 +24,9 @@ public:
         return res;
     }
 };
+
+// It's TC wil be less compared to other approach.
+Time Complexity: O(2^n) for generating every subset and O(k) to insert every subset in another data structure if the average length of every subset is k. 
+Overall Time Complexity: O(k * 2^n).
+
+Space Complexity: O(2^n * k) to store every subset of average length k. Auxiliary space is O(n)  if n is the depth of the recursion tree.
